@@ -71,13 +71,9 @@ class Deck52(Deck):
         for suit in self._suit:
             for rank in self._rank:
 
-                self.cards.append(Card(suit=suit, rank=rank).getCard())
+                self.cards.append(Card(suit=suit, rank=rank))
         self.shuffle(10)
 
-deck = Deck52()
-deck.shuffle(10)
-print(deck.drawCards(2))
-print(deck.drawCards(1))
 
 class Game:         #players, deck, dealer, hands, turns, actions(hit, stand) 
     def _init_(self, deck):
