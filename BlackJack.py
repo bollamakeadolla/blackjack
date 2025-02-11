@@ -116,7 +116,7 @@ class BlackJack(Game):
     def hit(self, player):
         player.hand.append(self.deck.drawCards(1))
 
-    def stand(self, player):
+    def stand(self, player): #when a player says they need to poop but have no poop to poop
         pass
 
     def checkWin(self):
